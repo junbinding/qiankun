@@ -193,6 +193,8 @@ start();
    let instance = null;
    function render(props = {}) {
      const { container } = props;
+     
+     Vue.use(VueRouter);
      router = new VueRouter({
        base: window.__POWERED_BY_QIANKUN__ ? '/app-vue/' : '/',
        mode: 'history',
